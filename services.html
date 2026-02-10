@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Zanhan HR Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loading-spinner">
+        <div class="spinner"></div>
+        <p style="margin-top: 1rem;">Loading...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+               <img src="assets/images/logo.jpeg" alt="Zanhan HR Solutions Logo" class="logo-img">
+                <span>Zanhan HR Solutions</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="nav-cta"><a href="contact.html" class="btn btn-primary">Get Started</a></li>
+            </ul>
+            
+            <!-- Dark Mode Toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Our HR Services</h1>
+                <p>Comprehensive, practical, and innovative HR solutions designed to help your organization thrive. Each service is tailored to meet the unique needs of small and medium-sized businesses.</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Services</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Details -->
+    <section class="services-details">
+        <div class="container">
+            <!-- Talent Acquisition -->
+            <div class="service-detail" id="talent">
+                <div class="service-detail-content">
+                    <div class="service-badge">Most Popular</div>
+                    <h2>Talent Acquisition & Recruitment</h2>
+                    <p class="service-intro">Finding the right people for the right roles is crucial for business success. Our comprehensive recruitment solutions ensure you get the best talent.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="fas fa-search"></i>
+                            <h4>Talent Sourcing</h4>
+                            <p>Active and passive candidate sourcing through multiple channels.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clipboard-check"></i>
+                            <h4>Screening & Assessment</h4>
+                            <p>Comprehensive screening, interviews, and skills assessment.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Offer Management</h4>
+                            <p>Negotiation and formal offer letter preparation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-process">
+                        <h3>Our Process</h3>
+                        <div class="process-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <h4>Needs Assessment</h4>
+                                <p>Understand your requirements and company culture.</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <h4>Talent Search</h4>
+                                <p>Source candidates through our extensive network.</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <h4>Screening & Interviews</h4>
+                                <p>Conduct preliminary interviews and assessments.</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <h4>Final Selection</h4>
+                                <p>Present shortlisted candidates for final interviews.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1551836026-d5c2c3c72785?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Talent Acquisition">
+                </div>
+            </div>
+
+            <!-- HR Consultancy -->
+            <div class="service-detail" id="consultancy">
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="HR Consultancy">
+                </div>
+                <div class="service-detail-content">
+                    <h2>HR Consultancy</h2>
+                    <p class="service-intro">Expert guidance on policies, compliance, and workforce planning to ensure your HR practices are effective, legal, and aligned with your business goals.</p>
+                    
+                    <div class="service-list">
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>HR Policy Development & Review</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Compliance Audits & Risk Assessment</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Workforce Planning & Strategy</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Performance Management Systems</span>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Employee Handbook Creation</span>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits">
+                        <h3>Benefits</h3>
+                        <ul>
+                            <li>Reduced legal risks through compliance</li>
+                            <li>Improved employee satisfaction</li>
+                            <li>Streamlined HR processes</li>
+                            <li>Better decision-making with data-driven insights</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Employee Onboarding -->
+            <div class="service-detail" id="onboarding">
+                <div class="service-detail-content">
+                    <h2>Employee Onboarding & Integration</h2>
+                    <p class="service-intro">Create smooth transitions for new hires with structured onboarding programs that improve retention, productivity, and employee engagement.</p>
+                    
+                    <div class="onboarding-plan">
+                        <div class="plan-phase">
+                            <h4>Pre-boarding (Week 1)</h4>
+                            <p>Paperwork completion, system access setup, welcome package.</p>
+                        </div>
+                        <div class="plan-phase">
+                            <h4>Orientation (Week 2)</h4>
+                            <p>Company culture introduction, team meetings, training sessions.</p>
+                        </div>
+                        <div class="plan-phase">
+                            <h4>Integration (Month 1)</h4>
+                            <p>Mentor assignment, goal setting, regular check-ins.</p>
+                        </div>
+                        <div class="plan-phase">
+                            <h4>Development (Month 2-3)</h4>
+                            <p>Performance reviews, feedback sessions, growth planning.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-box">
+                            <h3>70%</h3>
+                            <p>Higher retention rate with structured onboarding</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>50%</h3>
+                            <p>Faster productivity ramp-up</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>90%</h3>
+                            <p>New hire satisfaction rate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w-800&q=80" alt="Employee Onboarding">
+                </div>
+            </div>
+
+            <!-- Training & Development -->
+            <div class="service-detail" id="training">
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Training & Development">
+                </div>
+                <div class="service-detail-content">
+                    <h2>Training & Capacity Building</h2>
+                    <p class="service-intro">Upskill your employees through customized training programs designed for peak performance, leadership development, and organizational growth.</p>
+                    
+                    <div class="training-areas">
+                        <div class="area">
+                            <h4>Leadership Development</h4>
+                            <p>Manager training, executive coaching, team leadership</p>
+                        </div>
+                        <div class="area">
+                            <h4>Technical Skills</h4>
+                            <p>Software training, industry-specific skills, certifications</p>
+                        </div>
+                        <div class="area">
+                            <h4>Soft Skills</h4>
+                            <p>Communication, time management, problem-solving</p>
+                        </div>
+                        <div class="area">
+                            <h4>Compliance Training</h4>
+                            <p>Safety, harassment prevention, regulatory compliance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="delivery-methods">
+                        <h3>Delivery Methods</h3>
+                        <div class="methods">
+                            <span class="method-tag">In-person Workshops</span>
+                            <span class="method-tag">Virtual Training</span>
+                            <span class="method-tag">E-learning Modules</span>
+                            <span class="method-tag">One-on-One Coaching</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CV Revamp -->
+            <div class="service-detail" id="cv">
+                <div class="service-detail-content">
+                    <div class="service-badge">For Job Seekers</div>
+                    <h2>CV Revamp & Career Support</h2>
+                    <p class="service-intro">Professional CV crafting and career coaching services to boost employability, enhance interview skills, and unlock new career opportunities.</p>
+                    
+                    <div class="cv-packages">
+                        <div class="package">
+                            <h4>Basic CV Revamp</h4>
+                            <ul>
+                                <li>Professional formatting & layout</li>
+                                <li>Content optimization</li>
+                                <li>ATS-friendly design</li>
+                                <li>1 round of revisions</li>
+                            </ul>
+                        </div>
+                        <div class="package premium">
+                            <h4>Premium Career Package</h4>
+                            <ul>
+                                <li>Complete CV redesign</li>
+                                <li>Cover letter creation</li>
+                                <li>LinkedIn profile optimization</li>
+                                <li>Mock interview sessions</li>
+                                <li>Job search strategy</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <p>"Zanhan transformed my CV and within 2 weeks I had 5 interview calls. Their career guidance was invaluable!"</p>
+                        <div class="testimonial-author">
+                            <strong>Sarah M.</strong> <span>Marketing Professional</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1586282391129-76a6df230234?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="CV Revamp">
+                </div>
+            </div>
+
+            <!-- Project Management -->
+            <div class="service-detail" id="project">
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project Management">
+                </div>
+                <div class="service-detail-content">
+                    <h2>Project Management</h2>
+                    <p class="service-intro">Planning, executing, and delivering HR and organizational projects efficiently with our result-oriented approach and strong project management skills.</p>
+                    
+                    <div class="project-types">
+                        <div class="project-type">
+                            <h4>HR System Implementation</h4>
+                            <p>Selection and implementation of HR software solutions</p>
+                        </div>
+                        <div class="project-type">
+                            <h4>Organizational Restructuring</h4>
+                            <p>Redesigning organizational structure for efficiency</p>
+                        </div>
+                        <div class="project-type">
+                            <h4>Mergers & Acquisitions Support</h4>
+                            <p>HR due diligence and integration support</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-process">
+                        <h3>Our Project Methodology</h3>
+                        <ol>
+                            <li><strong>Discovery:</strong> Understand project scope and objectives</li>
+                            <li><strong>Planning:</strong> Create detailed project plan with timelines</li>
+                            <li><strong>Execution:</strong> Implement with regular progress tracking</li>
+                            <li><strong>Monitoring:</strong> Continuous quality and progress checks</li>
+                            <li><strong>Closure:</strong> Deliver results and post-project review</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service CTA -->
+    <section class="service-cta">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Ready to Transform Your HR Operations?</h2>
+                <p>Let's discuss which services are right for your organization. Schedule a free consultation today.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-calendar-check"></i> Schedule Consultation
+                    </a>
+                    <a href="tel:+254797254623" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.jpeg" alt="Zanhan HR Solutions Logo" style="height: 30px; filter: brightness(0) invert(1);">
+                        <span>Zanhan HR Solutions</span>
+                    </div>
+                    <p>Practical, innovative, and reliable HR solutions for Small and Medium-sized Organizations.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#talent">Talent Acquisition</a></li>
+                        <li><a href="services.html#consultancy">HR Consultancy</a></li>
+                        <li><a href="services.html#onboarding">Employee Onboarding</a></li>
+                        <li><a href="services.html#training">Training & Development</a></li>
+                        <li><a href="services.html#cv">CV Revamp</a></li>
+                        <li><a href="services.html#project">Project Management</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> risulah@zanhanhr.com</p>
+                    <p><i class="fas fa-phone"></i> +254 797 254 623</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    <a href="assets/pdf/Company profile- Zanhan HR Solutions.pdf" class="btn btn-outline" style="margin-top: 1rem;" download>
+                        <i class="fas fa-download"></i> Download Profile
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Zanhan HR Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254797254623" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="notification-badge">Live</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

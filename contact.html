@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Zanhan HR Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loading-spinner">
+        <div class="spinner"></div>
+        <p style="margin-top: 1rem;">Loading...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.jpeg" alt="Zanhan HR Solutions Logo" class="logo-img">
+                <span>Zanhan HR Solutions</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li class="nav-cta"><a href="#contact-form" class="btn btn-primary">Get Started</a></li>
+            </ul>
+            
+            <!-- Dark Mode Toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Get in Touch</h1>
+                <p>Ready to transform your HR operations? Contact us today for a free consultation. Let's discuss how we can help your organization thrive.</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Contact</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>Call us directly for immediate assistance</p>
+                    <a href="tel:+254797254623" class="contact-link">+254 797 254 623</a>
+                    <p class="contact-note">Available: Mon-Fri, 8:00 AM - 6:00 PM EAT</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Send us an email for detailed inquiries</p>
+                    <a href="mailto:risulah@zanhanhr.com" class="contact-link">risulah@zanhanhr.com</a>
+                    <p class="contact-note">We respond within 24 hours</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Based in Nairobi, serving clients nationwide</p>
+                    <p class="contact-link">Nairobi, Kenya</p>
+                    <p class="contact-note">Virtual consultations available worldwide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+254 XXX XXX XXX">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company" placeholder="Your company name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="talent">Talent Acquisition & Recruitment</option>
+                                <option value="consultancy">HR Consultancy</option>
+                                <option value="onboarding">Employee Onboarding</option>
+                                <option value="training">Training & Capacity Building</option>
+                                <option value="cv">CV Revamp & Career Support</option>
+                                <option value="project">Project Management</option>
+                                <option value="multiple">Multiple Services</option>
+                                <option value="not-sure">Not Sure Yet</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your HR needs..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our newsletter for HR tips and insights</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        
+                        <p class="form-note">* Required fields</p>
+                    </form>
+                </div>
+                
+                <!-- Contact Details -->
+                <div class="contact-details-section">
+                    <div class="contact-details-card">
+                        <h3>Contact Details</h3>
+                        
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4>Primary Contact</h4>
+                                <p><strong>Risulah Wanyande</strong></p>
+                                <p>Founder & HR Consultant</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p><a href="tel:+254797254623">+254 797 254 623</a></p>
+                                <p class="small-text">Call or WhatsApp</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p><a href="mailto:risulah@zanhanhr.com">risulah@zanhanhr.com</a></p>
+                                <p class="small-text">For all inquiries</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM EAT</p>
+                                <p><strong>Saturday:</strong> 9:00 AM - 1:00 PM EAT</p>
+                                <p><strong>Sunday:</strong> Closed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <div>
+                                <h4>Company Profile</h4>
+                                <p>Download our complete company profile</p>
+                                <a href="assets/pdf/Company profile- Zanhan HR Solutions.pdf" class="btn btn-outline" style="margin-top: 0.5rem;" download>
+                                    <i class="fas fa-file-pdf"></i> Download PDF
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="social-contact">
+                            <h4>Connect With Us</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://wa.me/254797254623" class="social-icon whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-card">
+                        <h3>Frequently Asked Questions</h3>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                How quickly do you respond to inquiries?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We typically respond within 24 hours during business days. For urgent matters, please call us directly.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Do you offer free consultations?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! We offer a free 30-minute consultation to understand your needs and discuss how we can help.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What areas in Kenya do you serve?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We serve clients nationwide in Kenya, with virtual consultations available for all locations. In-person services are available in Nairobi and surrounding areas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Let's Start Your HR Transformation Today</h2>
+                <p>Schedule a free consultation with Risulah to discuss your specific HR challenges and opportunities.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+254797254623" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <a href="mailto:risulah@zanhanhr.com" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Email Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.jpeg" alt="Zanhan HR Solutions Logo" style="height: 30px; filter: brightness(0) invert(1);">
+                        <span>Zanhan HR Solutions</span>
+                    </div>
+                    <p>Practical, innovative, and reliable HR solutions for Small and Medium-sized Organizations.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#talent">Talent Acquisition</a></li>
+                        <li><a href="services.html#consultancy">HR Consultancy</a></li>
+                        <li><a href="services.html#onboarding">Employee Onboarding</a></li>
+                        <li><a href="services.html#training">Training & Development</a></li>
+                        <li><a href="services.html#cv">CV Revamp</a></li>
+                        <li><a href="services.html#project">Project Management</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> risulah@zanhanhr.com</p>
+                    <p><i class="fas fa-phone"></i> +254 797 254 623</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    <a href="assets/pdf/Company profile- Zanhan HR Solutions.pdf" class="btn btn-outline" style="margin-top: 1rem;" download>
+                        <i class="fas fa-download"></i> Download Profile
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Zanhan HR Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254797254623" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="notification-badge">Live</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

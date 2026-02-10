@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanhan HR Solutions | HR Consultancy & Talent Acquisition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loading-spinner">
+        <div class="spinner"></div>
+        <p style="margin-top: 1rem;">Loading...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.jpeg" alt="Zanhan HR Solutions Logo" class="logo-img">
+                <span>Zanhan HR Solutions</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="nav-cta"><a href="contact.html" class="btn btn-primary">Get Started</a></li>
+            </ul>
+            
+            <!-- Dark Mode Toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Unlocking Workforce Potential Through <span class="highlight">Clear Connections</span></h1>
+                <p class="hero-subtitle">We are HR professionals dedicated to providing practical, innovative, and reliable HR solutions for Small and Medium-sized Organizations.</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get Free Consultation</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>100+</h3>
+                        <p>Clients Served</p>
+                    </div>
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Talents Placed</p>
+                    </div>
+                    <div class="stat">
+                        <h3>98%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="HR Team Collaboration" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section id="services" class="services-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our HR Services</h2>
+                <p class="section-subtitle">Comprehensive solutions tailored to growing businesses</p>
+            </div>
+            <div class="services-grid" id="services-grid">
+                <!-- Services loaded by JavaScript -->
+            </div>
+            <div class="text-center">
+                <a href="services.html" class="btn btn-outline">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Zanhan HR Solutions?</h2>
+                <p class="section-subtitle">We deliver measurable results through ethical practices</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Deep Market Knowledge</h3>
+                    <p>Local market insights and understanding of talent pools.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Ethical & Transparent</h3>
+                    <p>Candidate-first approach with complete transparency.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Strong Project Management</h3>
+                    <p>Timely, efficient, and measurable results delivery.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Lasting Partnerships</h3>
+                    <p>Commitment to building long-term client relationships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <div class="values-content">
+                <div class="values-text">
+                    <h2 class="section-title">Our Core Values</h2>
+                    <p>These principles guide everything we do at Zanhan HR Solutions</p>
+                    
+                    <div class="value-item">
+                        <div class="value-number">1</div>
+                        <div>
+                            <h3>Unlocking Solutions</h3>
+                            <p>Delivering HR services that solve real workforce challenges.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-number">2</div>
+                        <div>
+                            <h3>Clear Connection</h3>
+                            <p>Bridging the gap between organizations and the right talent.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-number">3</div>
+                        <div>
+                            <h3>Embracing Change</h3>
+                            <p>Quickly adapting to new environments, technologies, and challenges.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-number">4</div>
+                        <div>
+                            <h3>Result-Oriented</h3>
+                            <p>Planning, executing, and delivering projects efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="values-image">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Team Meeting">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your HR Strategy?</h2>
+                <p>Let's discuss how we can help your organization thrive with the right talent and HR solutions.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Schedule a Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.jpeg" alt="Zanhan HR Solutions Logo" style="height: 30px; filter: brightness(0) invert(1);">
+                        <span>Zanhan HR Solutions</span>
+                    </div>
+                    <p>Practical, innovative, and reliable HR solutions for Small and Medium-sized Organizations.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#talent">Talent Acquisition</a></li>
+                        <li><a href="services.html#consultancy">HR Consultancy</a></li>
+                        <li><a href="services.html#onboarding">Employee Onboarding</a></li>
+                        <li><a href="services.html#training">Training & Development</a></li>
+                        <li><a href="services.html#cv">CV Revamp</a></li>
+                        <li><a href="services.html#project">Project Management</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> risulah@zanhanhr.com</p>
+                    <p><i class="fas fa-phone"></i> +254 797 254 623</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    <a href="assets/pdf/Company profile- Zanhan HR Solutions.pdf" class="btn btn-outline" style="margin-top: 1rem;" download>
+                        <i class="fas fa-download"></i> Download Company Profile
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Zanhan HR Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254797254623" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="notification-badge">Live</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

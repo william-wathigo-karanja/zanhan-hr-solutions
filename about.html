@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Zanhan HR Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loading-spinner">
+        <div class="spinner"></div>
+        <p style="margin-top: 1rem;">Loading...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.jpeg" alt="Zanhan HR Solutions Logo" class="logo-img">
+                <span>Zanhan HR Solutions</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="nav-cta"><a href="contact.html" class="btn btn-primary">Get Started</a></li>
+            </ul>
+            
+            <!-- Dark Mode Toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>About Zanhan HR Solutions</h1>
+                <p>We are a group of HR professionals dedicated to providing practical, innovative, and reliable HR solutions for Small and Medium-sized Organizations.</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>About Us</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="company-story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>Who We Are</h2>
+                    <p>Zanhan HR Solutions was founded with a simple yet powerful vision: to bridge the gap between talented professionals and growing organizations. We recognized that many small and medium-sized businesses struggle with finding the right HR support that understands their unique challenges.</p>
+                    
+                    <p>Our focus is on <strong>unlocking workforce potential</strong> through clear connections, ethical practices, and adaptable HR strategies. We support growing businesses with recruitment, HR advisory, compliance, project-based HR support, and talent development—helping organizations embrace change, stay compliant, and build strong, productive teams.</p>
+                    
+                    <p>Beyond recruitment, we are passionate about empowering individuals. We help job seekers revamp their resumes, develop interview skills, and unlock new career opportunities that align with their aspirations and potential.</p>
+                    
+                    <div class="story-stats">
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>500+</h3>
+                            <p>Successful Placements</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>98%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Zanhan HR Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mission-vision-grid">
+                <div class="mission-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To empower organizations with the right talent, streamline HR processes, and support professionals in achieving career success through innovative, reliable, and adaptable HR services.</p>
+                    <div class="mission-points">
+                        <div class="point">
+                            <i class="fas fa-check"></i>
+                            <span>Empower organizations with right talent</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check"></i>
+                            <span>Streamline HR processes</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check"></i>
+                            <span>Support career success</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check"></i>
+                            <span>Deliver innovative HR services</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vision-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To be the leading HR solutions partner, known for delivering tailored, ethical, and impactful workforce solutions that drive growth, innovation, and opportunity.</p>
+                    <div class="vision-points">
+                        <div class="point">
+                            <i class="fas fa-star"></i>
+                            <span>Leading HR solutions partner</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-star"></i>
+                            <span>Tailored & ethical solutions</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-star"></i>
+                            <span>Impactful workforce strategies</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-star"></i>
+                            <span>Drive growth & innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="core-values">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Core Values</h2>
+                <p>These principles guide every decision we make and every service we deliver</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-number">01</div>
+                    <h3>Unlocking Solutions</h3>
+                    <p>Delivering HR services that solve real workforce challenges with practical, innovative approaches.</p>
+                    <div class="value-icon">
+                        <i class="fas fa-unlock"></i>
+                    </div>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-number">02</div>
+                    <h3>Clear Connection</h3>
+                    <p>Bridging the gap between organizations and the right talent with transparency and understanding.</p>
+                    <div class="value-icon">
+                        <i class="fas fa-bridge"></i>
+                    </div>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-number">03</div>
+                    <h3>Embracing Change</h3>
+                    <p>Quickly adapting to new environments, technologies, and challenges to ensure continued productivity and innovation.</p>
+                    <div class="value-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-number">04</div>
+                    <h3>Result-Oriented</h3>
+                    <p>Planning, executing, and delivering projects efficiently to achieve measurable organizational goals.</p>
+                    <div class="value-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-detail">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Zanhan HR Solutions?</h2>
+                <p>What sets us apart in delivering exceptional HR services</p>
+            </div>
+            
+            <div class="advantages">
+                <div class="advantage">
+                    <div class="advantage-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Deep Local Market Knowledge</h3>
+                        <p>We understand local talent pools, market dynamics, and industry-specific challenges, giving you a competitive advantage in finding and retaining talent.</p>
+                    </div>
+                </div>
+                
+                <div class="advantage">
+                    <div class="advantage-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Ethical & Transparent Approach</h3>
+                        <p>We maintain complete transparency in all our processes and prioritize ethical practices that respect both clients and candidates.</p>
+                    </div>
+                </div>
+                
+                <div class="advantage">
+                    <div class="advantage-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Strong Project Management</h3>
+                        <p>Our systematic approach ensures timely, efficient, and measurable results for every project, large or small.</p>
+                    </div>
+                </div>
+                
+                <div class="advantage">
+                    <div class="advantage-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Partnership Commitment</h3>
+                        <p>We believe in building lasting partnerships, not just client relationships. Your success is our success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="our-approach">
+        <div class="container">
+            <div class="approach-content">
+                <div class="approach-text">
+                    <h2>Our Approach to HR Solutions</h2>
+                    <p>We take a holistic, client-centered approach to every engagement:</p>
+                    
+                    <div class="approach-steps">
+                        <div class="approach-step">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h4>Understanding Your Needs</h4>
+                                <p>We start by deeply understanding your organization's culture, challenges, and objectives.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="approach-step">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h4>Customized Strategy</h4>
+                                <p>We develop tailored solutions that align with your specific business goals and constraints.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="approach-step">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h4>Collaborative Implementation</h4>
+                                <p>We work alongside your team, ensuring smooth implementation and knowledge transfer.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="approach-step">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h4>Continuous Support</h4>
+                                <p>We provide ongoing support and adjustments as your business evolves and grows.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="approach-image">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Collaborative Approach">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Partner with Us?</h2>
+                <p>Let's discuss how we can help transform your HR operations and unlock your organization's full potential.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-calendar-alt"></i> Schedule Free Consultation
+                    </a>
+                    <a href="services.html" class="btn btn-secondary">
+                        <i class="fas fa-list-alt"></i> View Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.jpeg" alt="Zanhan HR Solutions Logo" style="height: 30px; filter: brightness(0) invert(1);">
+                        <span>Zanhan HR Solutions</span>
+                    </div>
+                    <p>Practical, innovative, and reliable HR solutions for Small and Medium-sized Organizations.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#talent">Talent Acquisition</a></li>
+                        <li><a href="services.html#consultancy">HR Consultancy</a></li>
+                        <li><a href="services.html#onboarding">Employee Onboarding</a></li>
+                        <li><a href="services.html#training">Training & Development</a></li>
+                        <li><a href="services.html#cv">CV Revamp</a></li>
+                        <li><a href="services.html#project">Project Management</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> risulah@zanhanhr.com</p>
+                    <p><i class="fas fa-phone"></i> +254 797 254 623</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    <a href="assets/pdf/Company profile- Zanhan HR Solutions.pdf" class="btn btn-outline" style="margin-top: 1rem;" download>
+                        <i class="fas fa-download"></i> Download Company Profile
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Zanhan HR Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254797254623" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="notification-badge">Live</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
