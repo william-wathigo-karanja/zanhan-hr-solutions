@@ -230,6 +230,7 @@ document.addEventListener('DOMContentLoaded', function() {
         phoneInput.addEventListener('input', function(e) {
             let value = e.target.value.replace(/\D/g, '');
             
+            // Format for Kenya number: 0727-799-779
             if (value.startsWith('254')) {
                 value = '+254' + value.substring(3);
             } else if (value.startsWith('0')) {
@@ -238,6 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 value = '+254' + value;
             }
             
+            // Format: +254 727 799 779
             if (value.length > 4) {
                 value = value.replace(/(\+254)(\d{3})(\d{3})(\d{3})/, '$1 $2 $3 $4');
             }
@@ -246,59 +248,44 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ===== ENHANCED FORM SUBMISSION =====
-    const enhancedContactForm = document.getElementById('contact-form');
-    if (enhancedContactForm) {
-        enhancedContactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = {
-                name: document.getElementById('name').value.trim(),
-                email: document.getElementById('email').value.trim(),
-                phone: document.getElementById('phone').value.trim(),
-                company: document.getElementById('company').value.trim(),
-                service: document.getElementById('service').value,
-                message: document.getElementById('message').value.trim(),
-                newsletter: document.getElementById('newsletter') ? document.getElementById('newsletter').checked : false
-            };
-            
-            if (!formData.name || !formData.email || !formData.message) {
-                showFormMessage('Please fill in all required fields: Name, Email, and Message', 'error');
-                return;
-            }
-            
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(formData.email)) {
-                showFormMessage('Please enter a valid email address', 'error');
-                return;
-            }
-            
-            const submitBtn = enhancedContactForm.querySelector('.btn-primary');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            submitBtn.disabled = true;
-            
-            setTimeout(() => {
-                const serviceText = formData.service ? 
-                    `Service Interest: ${document.getElementById('service').options[document.getElementById('service').selectedIndex].text}\n` : '';
-                
-                const mailtoLink = `mailto:risulah@zanhanhr.com?subject=New Contact from ${encodeURIComponent(formData.name)}&body=Name: ${encodeURIComponent(formData.name)}%0AEmail: ${encodeURIComponent(formData.email)}%0APhone: ${encodeURIComponent(formData.phone)}%0ACompany: ${encodeURIComponent(formData.company)}%0A${serviceText}Message: ${encodeURIComponent(formData.message)}`;
-                
-                const tempLink = document.createElement('a');
-                tempLink.href = mailtoLink;
-                tempLink.style.display = 'none';
-                document.body.appendChild(tempLink);
-                tempLink.click();
-                document.body.removeChild(tempLink);
-                
-                showFormMessage('Thank you! Your message has been sent. We will get back to you within 24 hours.', 'success');
-                
+   // ===== FORMSPREE SUBMISSION =====
+const enhancedContactForm = document.getElementById('contact-form');
+
+if (enhancedContactForm) {
+    enhancedContactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const submitBtn = enhancedContactForm.querySelector('.btn-primary');
+        const originalText = submitBtn.innerHTML;
+
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+
+        const formData = new FormData(enhancedContactForm);
+
+        try {
+            const response = await fetch(enhancedContactForm.action, {
+                method: enhancedContactForm.method,
+                body: formData,
+                headers: { Accept: "application/json" }
+            });
+
+            if (response.ok) {
+                showFormMessage('Thank you! Your message has been sent successfully.', 'success');
                 enhancedContactForm.reset();
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            }, 1500);
-        });
-    }
+            } else {
+                showFormMessage('Something went wrong. Please try again.', 'error');
+            }
+
+        } catch (error) {
+            showFormMessage('Network error. Please try again later.', 'error');
+        }
+
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+    });
+}
+
     
     // ===== FORM MESSAGES =====
     function showFormMessage(message, type) {
